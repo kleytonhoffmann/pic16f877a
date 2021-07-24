@@ -1,0 +1,116 @@
+MPLINK 4.49, Linker
+Linker Map File - Created Mon Nov 18 16:47:52 2019
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_1       code   0x000000    program   0x000002
+                   .cinit    romdata   0x000001    program   0x000004
+                   .org_2       code   0x000004    program   0x000252
+                  .idlocs       code   0x002000    program   0x000008
+    .config_2007_BASICO.O       code   0x002007    program   0x000002
+                   .org_0       code   0x002100    program   0x000016
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000002      
+                            0x000004    0x00012c      
+                            0x002000    0x002003      
+                            0x002007    0x002007      
+                            0x002100    0x00210a      
+            316 out of 8454 program addresses used, program memory utilization is 3%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+         COMPARA_VALOR_10   0x000087    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+        COMPARA_VALOR_150   0x00007d    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+                CONV_DISP   0x00008e    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+            CONV_DISP_BCD   0x00009f    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+                    DELAY   0x0000aa    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+                  DELAY_1   0x0000b0    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+                  DELAY_T   0x0000c0    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+               DELAY_TMR1   0x0000b8    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+                      DIV   0x0000d0    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+                   D_divF   0x0000c6    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+           ESCREVE_EEPROM   0x000118    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+        GERA_PARIDADE_PAR   0x00006d    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+                    IGUAL   0x000086    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+                  IGUAL_1   0x000055    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+                   INICIO   0x000024    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+                LE_EEPROM   0x00010d    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+                     LOOP   0x000072    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+                     MAIN   0x00004a    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+                    MAIOR   0x000085    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+                  MAIOR_1   0x000053    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+                    MENOR   0x000084    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+                  MENOR_1   0x000054    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+                    NOCHK   0x0000db    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+                     NOGO   0x0000e3    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+             RESGATA_REGS   0x00001c    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+             RESULT_9BITS   0x00006b    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+          RESULT_NEGATIVO   0x000063    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+          RESULT_POSITIVO   0x00005c    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+              RESULT_ZERO   0x00005f    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+               SALVA_REGS   0x000005    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+             SOMA_2_BYTES   0x000064    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+               SUB_COMP_2   0x000056    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+                  TESTA_W   0x000079    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+             TRATA_EEPROM   0x00001b    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+               TRATA_TMR1   0x000012    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+             _.org_2_00B1   0x0000b1    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+             _.org_2_00C1   0x0000c1    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+             _.org_2_011B   0x00011b    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+                    mpy_F   0x0000e8    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+               SALVA_REGS   0x000005    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+               TRATA_TMR1   0x000012    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+             TRATA_EEPROM   0x00001b    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+             RESGATA_REGS   0x00001c    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+                   INICIO   0x000024    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+                     MAIN   0x00004a    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+                  MAIOR_1   0x000053    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+                  MENOR_1   0x000054    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+                  IGUAL_1   0x000055    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+               SUB_COMP_2   0x000056    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+          RESULT_POSITIVO   0x00005c    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+              RESULT_ZERO   0x00005f    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+          RESULT_NEGATIVO   0x000063    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+             SOMA_2_BYTES   0x000064    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+             RESULT_9BITS   0x00006b    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+        GERA_PARIDADE_PAR   0x00006d    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+                     LOOP   0x000072    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+                  TESTA_W   0x000079    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+        COMPARA_VALOR_150   0x00007d    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+                    MENOR   0x000084    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+                    MAIOR   0x000085    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+                    IGUAL   0x000086    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+         COMPARA_VALOR_10   0x000087    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+                CONV_DISP   0x00008e    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+            CONV_DISP_BCD   0x00009f    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+                    DELAY   0x0000aa    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+                  DELAY_1   0x0000b0    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+             _.org_2_00B1   0x0000b1    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+               DELAY_TMR1   0x0000b8    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+                  DELAY_T   0x0000c0    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+             _.org_2_00C1   0x0000c1    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+                   D_divF   0x0000c6    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+                      DIV   0x0000d0    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+                    NOCHK   0x0000db    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+                     NOGO   0x0000e3    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+                    mpy_F   0x0000e8    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+                LE_EEPROM   0x00010d    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+           ESCREVE_EEPROM   0x000118    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+             _.org_2_011B   0x00011b    program     static C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly - com rotinas\basico.asm
+
+

@@ -1,0 +1,44 @@
+MPLINK 4.49, Linker
+Linker Map File - Created Thu Aug 02 20:04:16 2018
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_1       code   0x000000    program   0x000002
+                   .cinit    romdata   0x000001    program   0x000004
+                   .org_2       code   0x000004    program   0x000012
+                  .idlocs       code   0x002000    program   0x000008
+    .config_2007_BASICO.O       code   0x002007    program   0x000002
+                   .org_0       code   0x002100    program   0x000018
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000002      
+                            0x000004    0x00000c      
+                            0x002000    0x002003      
+                            0x002007    0x002007      
+                            0x002100    0x00210b      
+            29 out of 8454 program addresses used, program memory utilization is 0%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+             DEBOUNCE_BT1   0x00210b    program     static C:\Users\Hoffmann\Dropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly\basico.asm
+                   INICIO   0x000005    program     static C:\Users\Hoffmann\Dropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly\basico.asm
+                     MAIN   0x00000c    program     static C:\Users\Hoffmann\Dropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly\basico.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   INICIO   0x000005    program     static C:\Users\Hoffmann\Dropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly\basico.asm
+                     MAIN   0x00000c    program     static C:\Users\Hoffmann\Dropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly\basico.asm
+             DEBOUNCE_BT1   0x00210b    program     static C:\Users\Hoffmann\Dropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\Básico Assembly\basico.asm
+
+

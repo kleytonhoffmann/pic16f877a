@@ -1,0 +1,291 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$startup.obj
+end_init CODE 0 0 0 3 2
+config CONFIG 0 2007 2007 1 2
+$basico.obj
+cinit CODE 0 7F1 7F1 F 2
+cstackCOMMON COMMON 1 74 74 2 1
+clrtext CODE 0 7BB 7BB 8 2
+bssBANK0 BANK0 1 20 20 14 1
+bssCOMMON COMMON 1 70 70 4 1
+maintext CODE 0 7C3 7C3 2E 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+BANK0 0034-006F 1
+BANK1 00A0-00EF 1
+BANK2 0110-016F 1
+BANK3 0190-01EF 1
+CODE 0003-07BA 2
+CODE 0800-1FFF 2
+COMMON 0076-007D 1
+CONST 0003-07BA 2
+CONST 0800-1FFF 2
+EEDATA 2100-21FF 2
+ENTRY 0003-07BA 2
+ENTRY 0800-1FFF 2
+IDLOC 2000-2003 2
+RAM 0034-006F 1
+RAM 00A0-00EF 1
+RAM 0110-016F 1
+RAM 0190-01EF 1
+SFR0 0000-001F 1
+SFR1 0080-009F 1
+SFR2 0100-010F 1
+SFR3 0180-018F 1
+STACK 0110-016F 1
+STRCODE 0003-07BA 2
+STRCODE 0800-1FFF 2
+STRING 0003-07BA 2
+STRING 0800-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <file name>:<line number> <address> <psect name> <class name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$basico.obj
+"C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\BásicoC\basico.as":224 7BB clrtext CODE
+"C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\BásicoC\basico.as":225 7BB clrtext CODE
+"C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\BásicoC\basico.as":226 7BC clrtext CODE
+"C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\BásicoC\basico.as":227 7BC clrtext CODE
+"C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\BásicoC\basico.as":228 7BD clrtext CODE
+"C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\BásicoC\basico.as":229 7BE clrtext CODE
+"C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\BásicoC\basico.as":230 7BF clrtext CODE
+"C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\BásicoC\basico.as":231 7C0 clrtext CODE
+"C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\BásicoC\basico.as":232 7C1 clrtext CODE
+"C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\BásicoC\basico.as":233 7C2 clrtext CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic16f877a.h":2761 7C3 maintext CODE
+"C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\BásicoC\basico.c":20 7C3 maintext CODE
+"C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\BásicoC\basico.c":22 7C3 maintext CODE
+"C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\BásicoC\basico.c":23 7C7 maintext CODE
+"C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\BásicoC\basico.c":25 7CA maintext CODE
+"C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\BásicoC\basico.c":32 7CB maintext CODE
+"C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\BásicoC\basico.c":34 7D4 maintext CODE
+"C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\BásicoC\basico.c":36 7D6 maintext CODE
+"C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\BásicoC\basico.c":37 7DE maintext CODE
+"C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\BásicoC\basico.c":39 7E2 maintext CODE
+"C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\BásicoC\basico.c":40 7E4 maintext CODE
+"C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\BásicoC\basico.c":30 7F0 maintext CODE
+"C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\BásicoC\basico.as":200 7F1 cinit CODE
+"C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\BásicoC\basico.as":203 7F1 cinit CODE
+"C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\BásicoC\basico.as":237 7F1 cinit CODE
+"C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\BásicoC\basico.as":238 7F2 cinit CODE
+"C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\BásicoC\basico.as":239 7F3 cinit CODE
+"C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\BásicoC\basico.as":240 7F4 cinit CODE
+"C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\BásicoC\basico.as":243 7F5 cinit CODE
+"C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\BásicoC\basico.as":244 7F6 cinit CODE
+"C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\BásicoC\basico.as":245 7F7 cinit CODE
+"C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\BásicoC\basico.as":246 7F8 cinit CODE
+"C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\BásicoC\basico.as":247 7F9 cinit CODE
+"C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\BásicoC\basico.as":253 7FC cinit CODE
+"C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\BásicoC\basico.as":254 7FC cinit CODE
+"C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\BásicoC\basico.as":255 7FD cinit CODE
+$startup.obj
+"C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\BásicoC\startup.as":39 0 functab CODE
+"C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\BásicoC\startup.as":40 0 functab CODE
+"C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\BásicoC\startup.as":41 0 functab CODE
+"C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\BásicoC\startup.as":42 0 functab CODE
+"C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\BásicoC\startup.as":43 0 functab CODE
+"C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\BásicoC\startup.as":44 0 functab CODE
+"C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\BásicoC\startup.as":63 0 reset_vec CODE
+"C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\BásicoC\startup.as":69 0 init CODE
+"C:\Users\Hoffmann\OneDrive\Backupdropbox\UNOESC\Disciplinas Ministradas\Microcontroladores\Projetos PIC16F877A\BásicoC\startup.as":72 0 end_init CODE
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+_a 20 0 BANK0 1 bssBANK0 basico.obj
+_i 72 0 COMMON 1 bssCOMMON basico.obj
+__CFG_WRT$OFF 0 0 ABS 0 - basico.obj
+__S0 2008 0 ABS 0 - -
+__S1 76 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_VAR 70 0 COMMON 1 bssCOMMON basico.obj
+__Hintentry 0 0 CODE 0 intentry -
+__Lintentry 0 0 CODE 0 intentry -
+_main F86 0 CODE 0 maintext basico.obj
+___sp 0 0 STACK 2 stack startup.obj
+btemp 7E 0 ABS 0 - basico.obj
+ltemp 7E 0 ABS 0 - basico.obj
+ttemp 7E 0 ABS 0 - basico.obj
+wtemp 7E 0 ABS 0 - basico.obj
+start 0 0 CODE 0 init startup.obj
+_TRISB 86 0 ABS 0 - basico.obj
+reset_vec 0 0 CODE 0 reset_vec startup.obj
+_PORTB 6 0 ABS 0 - basico.obj
+ltemp0 7E 0 ABS 0 - basico.obj
+ttemp0 7E 0 ABS 0 - basico.obj
+wtemp0 7E 0 ABS 0 - basico.obj
+ltemp1 82 0 ABS 0 - basico.obj
+ttemp1 81 0 ABS 0 - basico.obj
+wtemp1 80 0 ABS 0 - basico.obj
+ltemp2 86 0 ABS 0 - basico.obj
+ttemp2 84 0 ABS 0 - basico.obj
+wtemp2 82 0 ABS 0 - basico.obj
+ltemp3 80 0 ABS 0 - basico.obj
+ttemp3 87 0 ABS 0 - basico.obj
+wtemp3 84 0 ABS 0 - basico.obj
+ttemp4 7F 0 ABS 0 - basico.obj
+wtemp4 86 0 ABS 0 - basico.obj
+wtemp5 88 0 ABS 0 - basico.obj
+wtemp6 7F 0 ABS 0 - basico.obj
+__Hconfig 4010 0 CONFIG 0 config -
+__Lconfig 400E 0 CONFIG 0 config -
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+__Hfunctab 0 0 CODE 0 functab -
+__Lfunctab 0 0 CODE 0 functab -
+__Hcommon 0 0 ABS 0 common -
+__Lcommon 0 0 ABS 0 common -
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+___int_sp 0 0 STACK 2 stack startup.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Labs1 0 0 ABS 0 abs1 -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Hcode 0 0 ABS 0 code -
+__Lcode 0 0 ABS 0 code -
+stackhi 0 0 ABS 0 - startup.obj
+stacklo 0 0 ABS 0 - startup.obj
+__Hinit 0 0 CODE 0 init -
+__Linit 0 0 CODE 0 init -
+__end_of_main FE2 0 CODE 0 maintext basico.obj
+__Htext 0 0 ABS 0 text -
+__Ltext 0 0 ABS 0 text -
+end_of_initialization FF8 0 CODE 0 cinit basico.obj
+_PORTBbits 6 0 ABS 0 - basico.obj
+__Hstrings 0 0 ABS 0 strings -
+__Lstrings 0 0 ABS 0 strings -
+__Hbank0 0 0 ABS 0 bank0 -
+__Lbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Lbank3 0 0 ABS 0 bank3 -
+___latbits 2 0 ABS 0 - basico.obj
+__Hpowerup 0 0 CODE 0 powerup -
+__Lpowerup 0 0 CODE 0 powerup -
+__Hclrtext 0 0 ABS 0 clrtext -
+__Lclrtext 0 0 ABS 0 clrtext -
+__end_of__initialization FF8 0 CODE 0 cinit basico.obj
+__Hidloc 0 0 IDLOC 0 idloc -
+__Lidloc 0 0 IDLOC 0 idloc -
+__Hstack 0 0 STACK 2 stack -
+__Lstack 0 0 STACK 2 stack -
+__Hspace_0 2008 0 ABS 0 - -
+__Lspace_0 0 0 ABS 0 - -
+__Hspace_1 76 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Hcinit 1000 0 CODE 0 cinit -
+__Lcinit FE2 0 CODE 0 cinit -
+__CFG_FOSC$HS 0 0 ABS 0 - basico.obj
+__Hspace_3 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__size_of_main 0 0 ABS 0 - basico.obj
+clear_ram0 F76 0 CODE 0 clrtext basico.obj
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__pbssBANK0 20 0 BANK0 1 bssBANK0 basico.obj
+__CFG_BOREN$OFF 0 0 ABS 0 - basico.obj
+__CFG_PWRTE$OFF 0 0 ABS 0 - basico.obj
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+__pbssCOMMON 70 0 COMMON 1 bssCOMMON basico.obj
+_INTCONbits B 0 ABS 0 - basico.obj
+__Hend_init 6 0 CODE 0 end_init -
+__Lend_init 0 0 CODE 0 end_init -
+__Hreset_vec 0 0 CODE 0 reset_vec -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+intlevel0 0 0 CODE 0 functab startup.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - basico.obj
+intlevel1 0 0 CODE 0 functab startup.obj
+intlevel2 0 0 CODE 0 functab startup.obj
+intlevel3 0 0 CODE 0 functab startup.obj
+intlevel4 0 0 CODE 0 functab startup.obj
+intlevel5 0 0 CODE 0 functab startup.obj
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__pcstackCOMMON 74 0 COMMON 1 cstackCOMMON basico.obj
+__CFG_CPD$OFF 0 0 ABS 0 - basico.obj
+start_initialization FE2 0 CODE 0 cinit basico.obj
+__Hmaintext 0 0 ABS 0 maintext -
+__Lmaintext 0 0 ABS 0 maintext -
+__pmaintext F86 0 CODE 0 maintext basico.obj
+__initialization FE2 0 CODE 0 cinit basico.obj
+__CFG_CP$OFF 0 0 ABS 0 - basico.obj
+__CFG_LVP$OFF 0 0 ABS 0 - basico.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect in on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+reset_vec 0 0 0 3 2
+cinit 0 7F1 FE2 F 2
+config 0 2007 400E 1 2
+bssCOMMON 1 70 70 6 1
+bssBANK0 1 20 20 14 1
+maintext 0 7C3 F86 2E 2
+clrtext 0 7BB F76 8 2
